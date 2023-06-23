@@ -9,7 +9,7 @@ void reverse_rotate_monty(stack_t **stack, unsigned int line_number);
 /**
  * execute_monty_nop - a C function
  * @stack: pointer to the top stack
- * @line_number: current working line number
+ * @line_number: current working line number.
  */
 void execute_monty_nop(stack_t **stack, unsigned int line_number)
 {

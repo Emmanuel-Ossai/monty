@@ -8,7 +8,7 @@ void mod_of_set_monty_stack_behav(stack_t **stack, unsigned int line_number);
 
 /**
  * add_to_set_monty_stack_behav - a C function that adds the top two values
- * @stack: pointer to the top stack
+ * @stack: pointer to the top stack.
  * @line_number: current working line number
  */
 void add_to_set_monty_stack_behav(stack_t **stack, unsigned int line_number)

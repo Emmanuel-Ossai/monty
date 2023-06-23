@@ -8,7 +8,7 @@ void swap_monty_top(stack_t **stack, unsigned int line_number);
 
 /**
  * push_to_set_monty_stack_behav - a C function pushes a value to a stack_t
- * @stack: pointer to the top stack
+ * @stack: pointer to the top stack.
  * @line_number: current working line number
  */
 void push_to_set_monty_stack_behav(stack_t **stack, unsigned int line_number)
