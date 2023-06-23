@@ -8,19 +8,20 @@ void (*get_op_func(char *opcode))(stack_t**, unsigned int);
 int execute_monty_script(FILE *script_fd);
 
 /**
- * token_deallocation - a function
+ * token_deallocation - a C function that deallocates
  */
 void token_deallocation(void)
 {
-	size_t x = 0;
-
-	if (op_toks == NULL)
-		return;
-
-	for (x = 0; op_toks[x]; x++)
-		free(op_toks[x]);
-
-	free(op_toks);
+	if (op_toks != NULL)
+	{
+		for (size_t x = 0; op_toks[x] != NULL; x++)
+		{
+			free(op_toks[x]);
+			op_toks[x] = NULL;
+		}
+		free(op_toks);
+		op_toks = NULL;
+	}
 }
 
 /**
