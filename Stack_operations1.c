@@ -34,8 +34,6 @@ void subtract_set_monty_stack_behav(stack_t **stack, unsigned int line_number)
 		error_set(custom_short_stack_error(line_number, "sub"));
 		return;
 	}
-	(*stack)->next->next->n -= (*stack)->next->n;
-	remove_monty_top(stack, line_number);
 }
 
 /**
@@ -56,8 +54,6 @@ void divide_set_monty_stack_behav(stack_t **stack, unsigned int line_number)
 		error_set(custom_div_error(line_number));
 		return;
 	}
-	(*stack)->next->next->n /= (*stack)->next->n;
-	remove_monty_top(stack, line_number);
 }
 
 /**
