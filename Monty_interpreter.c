@@ -6,10 +6,10 @@
 char **op_toks = NULL;
 
 /**
- * main - a function
- * @argc: counts arguments
- * @argv: a pointer array
- * Return: success for exit success and error for exit failure
+ * main - a C function that interpretes monty
+ * @argc: arguments count
+ * @argv: arguments vector
+ * Return: success or error
  */
 int main(int argc, char **argv)
 {
